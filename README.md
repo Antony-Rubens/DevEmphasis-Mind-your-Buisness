@@ -93,7 +93,7 @@ Hardware:
 Project Demo
 
 Video
-[[Add your demo video link here]](https://drive.google.com/file/d/1eX_RYeQOKTZE8qoZP0BI7ZlM4gXrFmQT/view?usp=drivesdk)
+(https://drive.google.com/file/d/1eX_RYeQOKTZE8qoZP0BI7ZlM4gXrFmQT/view?usp=drivesdk)
 Shows a live walkthrough of a user typing a status and AI family reacting in real time.
 
 Additional Demos
