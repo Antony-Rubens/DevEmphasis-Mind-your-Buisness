@@ -28,8 +28,8 @@ We’re solving the age-old problem of nosy relatives by giving you more of them
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- Languages used-Python,JavaScript,HTML/CSS,JSON
-- Frame work used-React
+- Languages used - Python,JavaScript,HTML/CSS,JSON
+- Frame work used - React
 - [Libraries used]
 - [Tools used]
 
