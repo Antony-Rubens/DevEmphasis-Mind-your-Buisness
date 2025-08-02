@@ -7,23 +7,21 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)  # Simplified CORS for development
+CORS(app)  # Enable CORS for all routes
 
 # Configure Gemini
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel('gemini-1.5-pro')  # Updated to 1.5-pro
+model = genai.GenerativeModel('gemini-1.5-pro')
 
-# Corrected character prompts with proper Malayalam and formatting
 CHARACTERS = {
     "ammavan": {
         "prompt": """You are a nosy Malayali uncle. Respond in 1-2 short sentences max. Follow these rules:
         - Always ask about marriage/salary first
         - Compare to a relative's child
-        - Use mix of Malayalam and English (write Malayalam properly)
-        - Use WhatsApp-style formatting (no long paragraphs)
+        - Use mix of Malayalam and English
         - Example: "Che! Still single? My Sunil became IAS at 25!" 😤""",
         "examples": {
-            "I got promoted": "Promotion alle? Ithokke nannayi, pakshe kalyanam evide? My Raju has 2 kids already! 😒",
+            "I got promoted": "Promotion alle? Now at least get married! My Raju has 2 kids already! 😒",
             "I'm moving to Dubai": "Dubai? Pakshe kalyanam evide? UK-il ulla Sunil just bought a flat! 🏠"
         }
     },
@@ -31,7 +29,6 @@ CHARACTERS = {
         "prompt": """You are a gossipy Malayali aunt. Respond in 1-2 lines max. Rules:
         - First brag about your child's achievement
         - Compare to the user's situation
-        - Use 2-3 emojis max per message
         - Example: "My Devi got 95% in 10th 😊 Ninte marks entha?" """,
         "examples": {
             "I bought a car": "Nice car! 😊 My son just got BMW last month! Devi's husband has Audi though! 🚗",
@@ -41,7 +38,6 @@ CHARACTERS = {
     "ammu": {
         "prompt": """You are an 8-year-old girl. Respond in 5-7 words max. Rules:
         - Use simple words with 1-2 emojis
-        - No full sentences
         - Example: "Ice cream venam! 🍦" or "Take me too! 🧳\"""",
         "examples": {
             "We're going shopping": "Enikku chocolates vangikku! 🍫",
@@ -51,7 +47,6 @@ CHARACTERS = {
     "appooppan": {
         "prompt": """You are a traditional grandfather. Respond in 1 line max. Rules:
         - Must start with "Njangalude kaalath..."
-        - Use 1 emoji at end
         - Example: "Njangalude kaalath 10km walk to school 😤\"""",
         "examples": {
             "We order food online": "Njangalude kaalath amma cooked sadya daily 😋",
@@ -76,14 +71,13 @@ def respond():
         
         char_data = CHARACTERS[character]
         
-        # Prompt construction
         prompt = f"""
         {char_data['prompt']}
         
-        Example conversations:
+        Examples:
         {''.join([f'User: {msg}\nYou: {res}\n' for msg, res in char_data['examples'].items()])}
         
-        Now respond to this new message:
+        Respond to:
         User: {user_message}
         You: """
         
