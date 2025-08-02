@@ -21,7 +21,9 @@ Mind Your Business AI is a fun web-based app that mimics the nosy behavior of ty
 When life feels a little *too* peaceful and stress-free, we bring in your classic Kerala relatives — guaranteed to stir up drama and remind you of problems you never knew you had.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+
+We’re solving the age-old problem of nosy relatives by giving you more of them — but this time, they’re trapped inside a hilarious AI-powered WhatsApp-style chat! Instead of avoiding awkward questions at family functions, you can now get roasted safely online by Ammavan, Ammayi, Appooppan, and Ammu — all in Manglish, with over-the-top drama and slap-worthy reactions. Because if you can’t escape the gossip, you might as well laugh at it! 😄🔥
+
 
 ## Technical Details
 ### Technologies/Components Used
