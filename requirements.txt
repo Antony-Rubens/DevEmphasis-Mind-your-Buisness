@@ -1,4 +1,7 @@
-openai>=0.28.0
-flask>=2.0.0
-flask-cors>=3.0.0
-python-dotenv>=0.19.0
+fastapi
+uvicorn
+google-generativeai
+flask
+flask-cors
+gunicorn
+python-dotenv
