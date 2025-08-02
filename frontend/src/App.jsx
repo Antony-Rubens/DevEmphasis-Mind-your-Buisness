@@ -89,7 +89,7 @@ export default function App() {
     <div className="phone-mockup">
       <div className="whatsapp-header">
         <div className="header-content">
-          <h1>Nosy Relatives</h1>
+          <h1>Mallu Relatives</h1>
           <p>Online</p>
         </div>
         <button onClick={testApiConnection} className="test-button">
