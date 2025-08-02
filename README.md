@@ -70,6 +70,9 @@ yarn dev  # or npm run dev
 Project Documentation
 
 Screenshots
+![WhatsApp Image 2025-08-03 at 01 38 02_efe2d6ef](https://github.com/user-attachments/assets/141526b1-fddb-40c1-8009-c33d07afd368)
+
+They take turns to roast you
 
 ![WhatsApp Image 2025-08-03 at 00 33 54_0dfb3ecf](https://github.com/user-attachments/assets/9ebdacd8-cce0-433a-b3eb-a6760f1cb963)
 
