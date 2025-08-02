@@ -13,10 +13,12 @@
 - Member 2: [Aslin Yeasudas] - [Albertian Institue of Science And Technology]
 
 ### Project Description
-[2-3 lines about what your project does]
+
+Mind Your Business AI is a fun web-based app that mimics the nosy behavior of typical Malayali relatives. When you type a personal update like “Got a job,” AI characters like Ammavan, Ammayi, Appooppan, and Ammu respond with sarcastic, judgmental comments in Malayalam+English, just like a family WhatsApp group. The cartoonish UI even lets you “Slap” or “Electrify” them for fun!
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+ 
+when life is 
 
 ### The Solution (that nobody asked for)
 [How are you solving it? Keep it fun!]
