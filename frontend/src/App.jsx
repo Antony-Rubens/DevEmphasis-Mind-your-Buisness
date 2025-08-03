@@ -38,7 +38,7 @@ export default function App() {
     try {
       for (const [charKey, charData] of Object.entries(characters)) {
         try {
-          const response = await fetch('http://localhost:5000/api/respond', {
+          const response = await fetch('https://devemphasis-mind-your-buisness-5.onrender.com/api/respond', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ character: charKey, text: userMessage })
@@ -77,7 +77,7 @@ export default function App() {
 
   const testApiConnection = async () => {
     try {
-      const response = await fetch('http://localhost:5000/test');
+      const response = await fetch('https://devemphasis-mind-your-buisness-5.onrender.com/test');
       const data = await response.json();
       alert(`Backend status: ${data.status}`);
     } catch (err) {
@@ -112,6 +112,7 @@ export default function App() {
           </div>
         ))}
         {loading && <div className="typing-indicator">Typing...</div>}
+        <div ref={messagesEndRef} />
       </div>
 
       <form onSubmit={handleSubmit} className="input-area">
