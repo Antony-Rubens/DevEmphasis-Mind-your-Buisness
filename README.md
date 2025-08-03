@@ -101,6 +101,8 @@ Shows a live walkthrough of a user typing a status and AI family reacting in rea
 
 Additional Demos
 (Not necessary)
+Run
+server is live at: [https://useless2-disruptor.vercel.app/](https://dev-emphasis-mind-your-buisness-ji1.vercel.app/)
 
 Team Contributions
 
